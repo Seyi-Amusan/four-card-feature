@@ -1,0 +1,64 @@
+@import 'layout';
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.header{
+    font-size: 1.8rem;
+    color: hsl(234, 12%, 34%);
+
+    @media (max-width:460px){
+        font-size: 1.1rem;
+    }
+
+    &__heading-2{
+        font-weight: 400;
+        opacity: .8;
+    }
+    &__heading-1{
+        font-weight: 600;
+    }
+    &__paragraph{
+        font-weight: 200;
+        font-size: 1.5rem;
+        opacity: .6;
+        line-height: 1.5;
+
+        @media (max-width:460px){
+            font-size: 1.1rem;
+        }
+    }
+}
+
+.container{
+    &__box{
+        box-shadow: 0 6px 1rem rgba(#000000, .1);
+        border-radius: 3px;
+        overflow: hidden;
+        color: hsl(234, 12%, 34%);
+        hr{
+            border: none;
+            height: 3px;
+        }
+        .red{background-color: hsl(0, 78%, 62%);}
+        .cyan{background-color: hsl(180, 62%, 55%);}
+        .blue{background-color: hsl(212, 86%, 64%);}
+        .orange{background-color: hsl(34, 97%, 64%);}
+
+        &--heading{
+            font-size: 1.8rem;
+        }
+
+        &--paragraph{
+            font-size: 1.1rem;
+            line-height: 1.5;
+            opacity: .7;
+        }
+    }
+
+    
+
+    
+}
